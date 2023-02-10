@@ -11,7 +11,8 @@ After unbundling the project:
 
 1. Run `npm install` in your terminal.
 2. Run `npm run server`. This will run your backend on port `8003`.
-3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
+3. In a new terminal, run `npm start`. This will run your React app on port
+   `8000`.
 
 In our React application, the data about the new generation of Planeteers is in
 the `db.json` file. This file will mimic an API that follows RESTful
@@ -67,7 +68,7 @@ Example Response:
     "born": 2000,
     "bio": "While Xiuhtezcatl started ...",
     "quote": "My father taught me ...",
-    "pictureUrl": "https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/XMartinez.gif",
+    "pictureUrl": "https://curriculum-content.s3.amazonaws.com/react-code-challenge/planeteer/xiuhtezcatl.jpg",
     "twitter": "@xiuhtezcatl"
   },
   {
@@ -77,7 +78,7 @@ Example Response:
     "born": 2000,
     "bio": "Vic is from low-lying land ...",
     "quote": "The journey of looking at ...",
-    "pictureUrl": "https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/vic.jpg",
+    "pictureUrl": "https://curriculum-content.s3.amazonaws.com/react-code-challenge/planeteer/vic-b.jpeg",
     "twitter": "@vict_barrett"
   }
 ]
@@ -143,7 +144,7 @@ Example Response:
   "born": 2000,
   "bio": "While Xiuhtezcatl started speaking about the environment at just age 6, he is now a 19-year-old indigenous activist, musician, and the youth director of Earth Guardians, an organization that trains youth across the world to use civic engagement and the arts to help solve environmental issues. As a hip-hop artist, Xiuhtezcatl also often uses music to convey powerful environmental messages. He is also not afraid to confront the government head-on, as he was one of the 21 plaintiffs that sued the federal government for their lack of action on climate change.",
   "quote": "My father taught me to see the magic in everything. Growing up, magic was in the sunrise and the rainfall. In every expression of life, no matter how small. I think that that was one of the most valuable wisdom that shaped who I was as a young boy. It gave me the perspective to see what was behind the dysfunction of our society, of our broken world, our dying ecosystems and corrupt leaders.",
-  "pictureUrl": "https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/XMartinez.gif",
+  "pictureUrl": "https://curriculum-content.s3.amazonaws.com/react-code-challenge/planeteer/xiuhtezcatl.jpg",
   "twitter": "@xiuhtezcatl"
 }
 ```
