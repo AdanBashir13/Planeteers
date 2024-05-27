@@ -4,6 +4,7 @@ import RandomButton from "./RandomButton";
 import PlaneteersContainer from "./PlaneteersContainer";
 import SearchBar from "./SearchBar";
 
+
 function App() {
   // State to hold planeteers and the search term
   const [planeteers, setPlaneteers] = useState([]);
