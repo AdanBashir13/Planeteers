@@ -1,29 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Planeteer() {
+// Function to toggle showing the bio or quote
+function Planeteer({ planeteer }) {
+  const [showQuote,setShowQuote] = useState(false);
+
+  const handleToggle = () => {
+    setShowQuote(!showQuote);
+  };
+
   return (
     <li className="cards__item">
       <div className="card">
         <img
-          src={"RENDER IMAGE"}
-          alt={"RENDER PERSON NAME"}
+          src={planeteer.pictureUrl}
+          alt={planeteer.name}
           className="card__image"
-        />
+          onClick={handleToggle}/>
+
         <div className="card__content">
-          <div className="card__title">{"RENDER NAME"}</div>
-          <p className="card__text">{"CONDITIONALLY RENDER BIO OR QUOTE"}</p>
+          <div className="card__title">{planeteer.name}</div>
+          <p className="card__text">
+            {showQuote ? planeteer.quote : planeteer.bio}
+          </p>
+
+
           <div className="card__detail">
-            <p>{"RENDER TWITTER HANDLE"}</p>
-            <p>
-              {
-                "CONDITIONALLY RENDER WHETHER THE PERSON IS USA-BASED OR WORKING OVERSEAS"
-              }
-            </p>
+            <p>{planeteer.twitter}</p>
+            <p>{planeteer.fromUSA ? "USA-based" : "Working overseas"}</p>
           </div>
         </div>
       </div>
     </li>
   );
 }
+
 
 export default Planeteer;
